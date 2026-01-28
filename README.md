@@ -20,7 +20,7 @@ A beginner-friendly FastAPI project implementing CRUD operations with a local JS
 ## Getting Started
 1. Clone the repository:
    ```bash
-   git clone 
+   git clone https://github.com/MsKrishna-Dev/FastAPI---Car-Price-API
 Install dependencies:
 
 2. pip install -r requirements.txt
