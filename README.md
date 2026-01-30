@@ -1,29 +1,110 @@
-# FastAPI Car Price Prediction API
+# 🛒 FastAPI Product CRUD API (Learning Project)
 
-A beginner-friendly FastAPI project implementing CRUD operations with a local JSON database and exposing a Car Price Prediction Machine Learning model via API endpoints. Integrated with a Streamlit frontend for end-to-end learning of backend, ML, and UI.
+This is a beginner-friendly **FastAPI backend project** built for learning purposes.  
+It implements full **CRUD operations**, **dependency injection**, and **data persistence using a JSON file** instead of a database.
 
-## Tech Stack
-- **Backend:** FastAPI, Python
-- **Data Validation:** Pydantic
-- **Database:** Local JSON file
-- **Machine Learning:** Python ML model for car price prediction
-- **Frontend:** Streamlit
-- **Deployment:** Render (FastAPI), Streamlit Cloud (Frontend)
+The project uses a sample dataset related to **hardware products** such as laptops, mobiles, PCs, etc.
 
-## Features
-- Full CRUD operations with JSON database
-- Request and response validation
-- API error handling and status codes
-- Exposes ML model via REST API
-- Streamlit frontend to interact with API
+---
 
-## Getting Started
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/MsKrishna-Dev/FastAPI---Car-Price-API
-Install dependencies:
+## 🚀 Features
 
-2. pip install -r requirements.txt
-3. Run FastAPI server:
-    - uvicorn main:app --reload
-    - 
+✅ FastAPI-based REST API  
+✅ CRUD operations (Create, Read, Update, Delete)  
+✅ Dependency Injection  
+✅ Data stored in `products.json` file  
+✅ Input validation using Pydantic models  
+✅ API testing using Swagger UI  
+✅ Beginner-friendly project structure  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **FastAPI**
+- **Uvicorn**
+- **Pydantic**
+
+---
+
+## 📂 Project Structure
+
+```
+FastAPI---Car-Price-API/
+│
+├── app/
+│ ├── data/
+│ │ ├── products.json
+│ │ └── dummy.json
+│ │
+│ ├── schema/
+│ │ └── product.py
+│ │
+│ ├── service/
+│ │ └── products.py
+│ │
+│ ├── main.py
+│ └── pycache/
+│
+├── .env
+├── requirements.txt
+├── README.md
+└── venv/
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/FastAPI-Product-CRUD.git
+cd FastAPI-Product-CRUD
+```
+
+### 2️⃣ Create virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+### 3️⃣ Install dependencies
+pip install -r requirements.txt
+
+---
+
+### ▶️ Run the Server
+uvicorn app.main:app --reload
+Server will start at: http://127.0.0.1:8000
+
+---
+
+### 🧪 API Testing (Swagger UI)
+
+Open in browser: http://127.0.0.1:8000/docs
+You can test all endpoints directly from the UI without Postman.
+
+---
+
+## 🔗 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/products` | Get all products |
+| GET | `/products/{product_id}` | Get product by ID |
+| POST | `/products` | Add a new product |
+| PUT | `/products/{product_id}` | Update an existing product |
+| DELETE | `/products/{product_id}` | Delete a product |
+
+---
+
+🎯 Learning Outcomes
+
+- FastAPI routing and request handling
+- CRUD API design
+- JSON file persistence
+- Dependency Injection
+- Swagger UI testing
+- Backend debugging
+
+---
+
