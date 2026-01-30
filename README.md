@@ -31,7 +31,7 @@ The project uses a sample dataset related to **hardware products** such as lapto
 ## 📂 Project Structure
 
 ```
-FastAPI---Car-Price-API/
+FastAPI-CRUD-Products/
 │
 ├── app/
 │ ├── data/
@@ -49,6 +49,7 @@ FastAPI---Car-Price-API/
 │
 ├── .env
 ├── requirements.txt
+├── Swagger UI.png
 ├── README.md
 └── venv/
 ```
@@ -59,7 +60,7 @@ FastAPI---Car-Price-API/
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone [https://github.com/your-username/FastAPI-Product-CRUD.git](https://github.com/MsKrishna-Dev/FastAPI-CRUD-Products.git)
+git clone https://github.com/MsKrishna-Dev/FastAPI-CRUD-Products.git
 cd FastAPI-Product-CRUD
 ```
 
@@ -82,6 +83,11 @@ Server will start at: http://127.0.0.1:8000
 
 Open in browser: http://127.0.0.1:8000/docs
 You can test all endpoints directly from the UI without Postman.
+
+---
+
+## 📸 Screenshots
+![Swagger UI](Swagger UI.png)
 
 ---
 
